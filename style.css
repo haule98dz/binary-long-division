@@ -1,0 +1,11 @@
+#cv{
+    height:30%;
+    width:50%;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+input{
+    width: 300px;
+}
