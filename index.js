@@ -3,8 +3,8 @@ var ct= cv.getContext('2d');
 
 
 function divide() {
-    var sa = $('A').val();
-    var sb = $('B').val();
+    var sa = $('#A').val();
+    var sb = $('#B').val();
     var dividend, divisor;
     try {
         dividend = parseInt(sa, 2);
@@ -13,11 +13,21 @@ function divide() {
         alert('Wrong input');
         return;
     }
-
+    
     var quotient, remainder;
+    addLine(sa);
     
     
 
+}
+
+function addLine(s, indent = 0) {
+    var child = '<p>';
+    for (var i = 0; i< indent; i++) {
+        child += '&nbsp';
+    }
+    child += s + '</p>';
+    $('#result').append(child);
 }
 
 function getBinLen(x) {

@@ -1,9 +1,11 @@
-#cv{
+#result{
     height:30%;
     width:50%;
     border: solid;
     border-color: black;
     border-width: 1px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
 }
 
 input{
