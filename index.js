@@ -1,3 +1,14 @@
+class ResultDisplayer {
+    constructor() {
+        this.lines = [];
+
+    }
+
+    size() {
+        return this.lines.length;
+    }
+}
+
 var cv = document.getElementById('cv')
 var ct= cv.getContext('2d');
 
